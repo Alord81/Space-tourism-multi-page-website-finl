@@ -1,0 +1,409 @@
+body {
+    color: white;
+    font-family: Barlow;
+    background: url('/assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media (max-width:960px) {
+    body {
+        background: url('/assets/destination/background-destination-tablet.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:695px) {
+    body {
+        background: url('/assets/destination/background-destination-mobile.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+.container {
+    width: 60%;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    transform: translateX(-55%);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+@media (max-width:1450px) {
+    .container {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width:1250px) {
+    .container {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width:770px) {
+    .container {
+        top: 15%;
+    }
+}
+@media (max-width:620px) {
+    .container {
+        top: 10%;
+        gap: 30px;
+    }
+}
+
+h5 {
+    color: var(--font-color-first);
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 50px;
+}
+@media (max-width:1250px) {
+    h5 {
+        margin-left: 7%;
+    }
+}
+@media (max-width:770px) {
+    h5 {
+        margin-left: 12px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+        gap: 19px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width:620px) {
+    .pick-your-destination {
+        text-align: center;
+    }
+    h5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        gap: 18px;
+    }
+}
+
+h5 span{
+    color: var(--font-color-first);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+@media (max-width:770px) {
+    h5 span {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.375px;
+    }
+}
+@media (max-width:620px) {
+    h5 span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+}
+/* The Planet */
+.the-planet {
+    display: flex;
+    justify-content: space-around;
+    gap: 36px;
+}
+
+@media (max-width:770px) {
+    .the-planet {
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        gap: 18px;
+    }
+}
+@media (max-width:620px) {
+
+}
+.the-planet .img-of-planet {
+    flex: 1;
+    position: relative;
+}
+.the-planet .info {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+@media (max-width:770px) {
+    .the-planet .info {
+        text-align: center;
+        width: 573px;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info {
+        width: 327px;
+    }
+}
+
+.the-planet .info ul {
+    width: 315px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 37px;
+}
+@media (max-width:770px) {
+    .the-planet .info ul {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info ul {
+        gap: 18px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+.the-planet .info ul li {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+}
+@media (max-width:620px) {
+    .the-planet .info ul li {
+        height: 28px;
+    }
+}
+
+.the-planet .info ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--font-color-first);
+    bottom: 0;
+    left: -100px;
+    transition: var(--main-transition);
+}
+.the-planet .info ul li:hover::before {
+    left: 0;
+}
+.the-planet .info ul li a {
+    color: var(--font-color-second);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    transition: var(--main-transition);
+}
+@media (max-width:620px) {
+    .the-planet .info ul li a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
+    }
+}
+.the-planet .info ul li.this-planet::before {
+    left: 0;
+}
+.the-planet .info ul li.this-planet a {
+    color: var(--font-color-first);
+}
+
+.the-planet .info-data {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+@media (max-width:770px) {
+    .the-planet .info-data {
+        gap: 8px;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info-data {
+        gap: 1px;
+    }
+}
+
+.the-planet .info-data h2 {
+    color: var(--font-color-first);
+    font-family: Bellefair;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+@media (max-width:770px) {
+    .the-planet .info-data h2 {
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info-data h2 {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.the-planet .info-data p {
+    color: var(--font-color-second);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+@media (max-width:770px) {
+    .the-planet .info-data p {
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info-data p {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        width: 327px;
+        margin: auto;
+    }
+}
+
+.the-planet .info-numbers {
+    margin-top: 54px;
+    display: flex;
+    gap: 79px;
+    border-top: #383B4B 1px solid;
+}
+@media (max-width:770px) {
+    .the-planet .info-numbers {
+        margin-top: 49px;
+        text-align: center;
+        justify-content: space-evenly;
+        gap: 11px;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .info-numbers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+}
+.the-planet .info-numbers > div {
+    margin-top: 28px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+@media (max-width:620px) {
+    .the-planet .info-numbers > div {
+        margin-top: 32px;
+    }
+    .the-planet .info-numbers > div:last-child {
+        margin-bottom: 57px;
+    }
+}
+
+.the-planet .info-numbers > div .subheading-2 {
+    color: var(--font-color-second);
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+@media (max-width:770px) {
+    .the-planet .info-numbers > div .subheading-2 {
+        margin: auto;
+    }
+}
+
+.the-planet .info-numbers > div .subheading-1 {
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+@media (max-width:770px) {
+    .the-planet .info-numbers > div .subheading-1 {
+        margin: auto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+@media (max-width:1000px) {
+    .the-planet .img-of-planet {
+        width: 35%;
+    }
+    .the-planet .img-of-planet img{
+        width: 100%;
+    }
+}
+@media (max-width:770px) {
+    .the-planet .img-of-planet {
+        width: 300px;
+    }
+}
+@media (max-width:620px) {
+    .the-planet .img-of-planet {
+        width: 208.584px;
+    }
+}

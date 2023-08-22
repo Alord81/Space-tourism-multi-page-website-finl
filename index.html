@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Space tourism website</title>
+    
+      <!-- Google Font -->
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almarai:wght@300;400;700;800&family=Bai+Jamjuree:wght@400;600&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:wght@300;400&family=Outfit:wght@300;400;600&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almarai:wght@300;400;700;800&family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:wght@300;400&family=Outfit:wght@300;400;600&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almarai:wght@300;400;700;800&family=Bai+Jamjuree:wght@400;600&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:wght@300;400&family=Outfit:wght@300;400;600&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Almarai:wght@300;400;700;800&family=Bai+Jamjuree:wght@400;600&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:wght@300;400&family=Outfit:wght@300;400;600&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <!--/// Google Font ///-->
+
+    <!-- CSS Faile -->
+    <link rel="stylesheet" href="css/main-css.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav-stile.css">
+    <!--/// CSS Faile ///-->
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <nav>
+      <div>
+        <img src="/assets/shared/logo.svg" alt="">
+      </div>
+      <img src="/assets/shared/icon-hamburger.svg" class="hamburger-nav">
+      <ul>
+        <img src="/assets/shared/icon-close.svg" alt="" class="close">
+        <li class="nav-text active"><span>00</span> <a href="#" class="active">Home</a></li>
+        <li class="nav-text destination"><span>01</span> <a href="/destination.html">Destination</a></li>
+        <li class="nav-text crew"><span>02</span> <a href="/crew.html">Crew</a></li>
+        <li class="nav-text technology"><span>03</span> <a href="/technology.html">Technology</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <!-- INFO -->
+      <div class="info">
+        <h5>So, you want to travel to</h5>
+        <h1>Space</h1>
+        <p class="the-body">
+          Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+      <!--/// INFO ///-->
+    </div>
+
+    <div class="explore">
+      <h4>Explore</h4>
+    </div>
+  
+  </body>
+  <script src="js/navBar.js"></script>
+
+</html>

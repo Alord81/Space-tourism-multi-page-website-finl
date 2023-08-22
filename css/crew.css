@@ -1,0 +1,326 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+    background: url('/assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: var(--main-transition);
+}
+@media (max-width:960px) {
+    body {
+        background: url('/assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:695px) {
+    body {
+        background: url('/assets/crew/background-crew-mobile.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 76px;
+    overflow: hidden;
+}
+@media (max-width:960px) {
+    .container {
+        margin-top: 40px;
+    }
+}
+@media (max-width:695px) {
+    .container {
+        margin-top: 33px;
+    }
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 165.73px;
+}
+@media (max-width:960px) {
+    .container .box {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width:695px) {
+    .container .box {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+h5 {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 145px;
+}
+@media (max-width:960px) {
+    h5 {
+        margin-left: 38px;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:695px) {
+    h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin: auto;
+        margin-bottom: 329px;
+    }
+}
+
+h5 > span {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+@media (max-width:960px) {
+    h5 > span {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+}
+@media (max-width:695px) {
+    h5 > span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+}
+
+h4 {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5042;
+    margin-bottom: 15px;
+}
+@media (max-width:960px) {
+    h4 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+@media (max-width:695px) {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+h3 {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+@media (max-width:960px) {
+    h3 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+}
+@media (max-width:695px) {
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.the-body {
+    width: 444px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin-bottom: 120px;
+}
+@media (max-width:960px) {
+    .the-body {
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px; /* 175% */
+        margin: auto;
+        margin-bottom: 40px;
+        width: 592px;
+    }
+}
+@media (max-width:695px) {
+    .the-body {
+        font-size: 15px;
+        line-height: 25px; /* 166.667% */
+        width: 327px;
+    }
+}
+
+.crew-nav {
+    width: 132px;
+    height: 15px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 9;
+}
+@media (max-width:960px) {
+    .crew-nav {
+        width: 88px;
+        height: 10px;
+        margin: auto;
+    }
+}
+@media (max-width:695px) {
+    .crew-nav {
+        position: absolute;
+        top: 394px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+.crew-nav li {
+    width: 12%;
+    background-color: #fff;
+    /* background-color: #35373f; */
+    /* opacity: 0.5042; */
+    opacity: 0.2042;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.crew-nav li.this-person {
+    background-color: #FFF;
+    opacity: 1;
+}
+.crew-nav li:hover {
+    opacity: 0.5001;
+    background-color: #FFF;
+}
+
+.crew-photo {
+    position: absolute;
+    bottom: -4px;
+    right: 137px;
+    width: 468.072px;
+    height: fit-content;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+@media (max-width:1488px) {
+    .crew-photo {
+        right: 40px;
+    }
+}
+@media (max-width:1252px) {
+    .crew-photo {
+        right: 35px;
+        width: 440px;
+    }
+}
+@media (max-width:1120px) {
+    .crew-photo {
+        right: 35px;
+        width: 340px;
+    }
+}
+@media (max-width:1010px) {
+    .crew-photo {
+        right: 35px;
+        width: 300px;
+    }
+}
+@media (max-width:960px) {
+    .crew-photo {
+        width: 313.853px;
+        left: 50%;
+        bottom: -4px;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+}
+@media (max-width:695px) {
+    .crew-photo {
+        width: 327px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        top: 139px;
+        border-bottom: 1px solid #383B4B;;
+    }
+}
+
+.crew-photo img{
+    transform: translateY(107%);
+    transition: .4s ease-out;
+    width: 100%;
+}
+@media (max-width:1252px) {
+    .crew-photo img{
+        width: inherit;
+    }
+}
+/* @media (max-width:1120px) {
+    .crew-photo img{
+        width: 340px;
+    }
+}
+@media (max-width:1010px) {
+    .crew-photo img{
+        width: 300px;
+    }
+}
+*/
+/* @media (max-width:960px) {
+    .crew-photo img{
+        height: inherit;
+    }
+}  */
+@media (max-width:695px) {
+    .crew-photo img{
+        width: 153.92px;
+        /* height: fit-content; */
+    }
+}
+
+.crew-photo.show-me img {
+    transform: translateY(0%);
+}

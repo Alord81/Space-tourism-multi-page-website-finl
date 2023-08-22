@@ -1,0 +1,198 @@
+body {
+    font-family: Barlow Condensed;
+}
+.container {
+    position: absolute;
+    top: 387px;
+    left: 165px;
+}
+@media (max-width:768px) {
+    .container {
+        top: 112px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 63%;
+    }
+}
+.info {
+    /* display: flex;
+    flex-direction: column; */
+    display: inline-flex;
+    padding-right: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+.info h5 {
+    color: var(--font-color-second);
+}
+@media (max-width:768px) {
+    .info h5 {
+        margin: auto;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.375px;
+    }
+}
+@media (max-width:545px) {
+    .info h5 {
+        font-size: .7rem;
+    }
+}
+.info h1 {
+    color: var(--font-color-first);
+    width: 100%;
+    font-family: Bellefair;
+
+}
+@media (max-width:768px) {
+    .info h1 {
+        font-size: 937.5% !important;
+    }
+}
+@media (max-width:650px) {
+    .info h1 {
+        font-size: 880.5% !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+@media (max-width:610px) {
+    .info h1 {
+        font-size: 837.5% !important;
+    }
+}
+@media (max-width:545px) {
+    .info h1 {
+        font-size: 637.5% !important;
+    }
+}
+.info p {
+    color: var(--font-color-second);
+    width: 444px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+@media (max-width:768px) {
+    .info p {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+    }
+}
+@media (max-width:545px) {
+    .info p {
+
+        font-size: .8rem;
+    }
+}
+
+.explore {
+    position: absolute;
+    color: var(--black-color);
+    background-color: var(--font-color-first);
+    top: 69%;
+    left: 78%;
+    transform: translate(-22% ,-31%);
+    width: 274px;
+    height: 274px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 80px solid transparent;
+    cursor: pointer;
+    transition: .5s ease !important;
+    font-family: Bellefair;
+}
+@media (max-width:1005px) {
+    .explore {
+        top: 50%;
+        left: 75%;
+    }
+}
+@media (max-width:890px) {
+    .explore {
+        top: 58%;
+        left: 78%;
+        width: 200px;
+        height: 200px;
+        outline-width: 30px;
+    }
+}
+@media (max-width:795px) {
+    .explore {
+        top: 58%;
+        left: 82%;
+        width: 140px;
+        height: 140px;
+        outline-width: 23px;
+    }
+}
+@media (max-width:770px) {
+    .explore {
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        width: 200px;
+        height: 200px;
+        outline-width: 30px;
+    }
+}
+@media (max-width:545px) {
+    .explore {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+        width: 140px;
+        height: 140px;
+        outline-width: 23px;
+    }
+}
+.explore:hover {
+    outline-color:hsla(0, 0%, 100%, 0.1036);
+}
+.explore h4{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+@media (max-width:795px) {
+    .explore h4{
+        font-size: 22px !important;
+    }
+}
+
+body {
+    background: url('/assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media (max-width:960px) {
+    body {
+        background: url('/assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:695px) {
+    body {
+        background: url('/assets/home/background-home-mobile.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
